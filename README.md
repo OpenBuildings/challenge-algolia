@@ -1,6 +1,6 @@
 # [Clippings.com](https://clippings.com) [Algolia](https://www.algolia.com) challenge
 
-Clippings' challenge for developers to create a Node.js CLI search client for Algolia
+Clippings' challenge to developers to create a Node.js CLI search client for Algolia
 
 This is a small task sent to potential hires for evaluation.
 
