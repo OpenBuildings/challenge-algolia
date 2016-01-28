@@ -13,7 +13,7 @@ Algolia is a hosted search solution. It allows you send your data in a structure
 There are a lot of integrations for Algolia, including their awesome dashboard which allows you to search and preview your indices in the browser. However there is no command-line search client which would present the results properly to the user (usually a developer).
 
 The task is to build a Node.js npm package which could be installed globally as a CLI client.  
-It needs to have:
+It would be great to have:
 
 - simple configuration (e.g. environment variables) for API key and application ID;
 - simple help in the CLI describing the possible commands;
