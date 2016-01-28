@@ -6,7 +6,7 @@ This is a small task sent to potential hires for evaluation.
 
 ## What is Algolia?
 
-Algolia is a hosted search solution. It allows you send your data in a structured way to be indexed and then queries with blazing speed. You could read their documentation at https://www.algolia.com/doc.
+Algolia is a hosted search solution. It allows you send your data in a structured way to be indexed and then queried with blazing speed. You could read their documentation at https://www.algolia.com/doc.
 
 ## The Task
 
