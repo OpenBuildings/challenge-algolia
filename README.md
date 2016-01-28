@@ -21,6 +21,11 @@ It needs to have:
 - speed;
 - a cool effect - whether it would be colours, interactive search, piping ability, filtering the results using Algolia facets or anything you can come up with.
 
+## Some pointers
+
+- A good design is never easy to achieve, but try to separate the CLI code for input and output from the logic which performs the search and processes the results.
+- A full-blown documentation is unnecessary for this kind of package, but try to have a README stating what the package is for, how to install it, how to use it, license and author information.
+
 ## Useful resources
 
 - You could use [the official Algolia JavaScript client](https://github.com/algolia/algoliasearch-client-js) which could run in both Node.js and the browser.
@@ -28,7 +33,7 @@ It needs to have:
 - If you [sign up for Algolia](https://www.algolia.com/users/sign_up) there is a forever-free plan with a tutorial which could fill up your indices with test data. You could use it to test your client without taking the time to import data yourself.
 
 
-### Evaluation
+## Evaluation
 
 The most important thing is the client to be working and usable. It is optional, but recommended to be tested and linted in an automatic manner.
 
