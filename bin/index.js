@@ -45,7 +45,7 @@ axios.post(url, {
     if (options.field) {
         console.log(`List field ` + chalk.green(options.field) + ` from resultset:`);
         for (record of res.data.hits) {
-            console.log('- ' + record.name);
+            console.log(record.name);
         }
     } else if (!options.count) {
         console.log(res.data.hits);

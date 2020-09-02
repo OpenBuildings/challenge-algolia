@@ -1,5 +1,5 @@
 {
-  "name": "challenge-algolia",
+  "name": "algolia-cli",
   "version": "1.0.0",
   "description": "Algolia CLI App",
   "main": "bin/index.js",

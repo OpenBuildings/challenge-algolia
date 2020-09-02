@@ -19,23 +19,25 @@ The tool is accessible by executing "algolia" in the command line. This action w
 
 Examples (assuming you use the sample index GEO):
 ```bash
-# Show search results count for term "bulgaria"
-algolia -q bulgaria -c
+# Show search results count for term "airport"
+algolia -q airport -c
 
 # Limit the results displayed on the terminal. Useful to review the available results.
-algolia -q bulgaria -l 1
+algolia -q airport -l 1
 
 # List only field "airport_id" from the resultset (default limit: 20)
-algolia -q bulgaria -f airport_id
+algolia -q airport -f airport_id
 
 # List only field "airport_id" from the resultset for up to 50 results
-algolia -q bulgaria -f airport_id -l 50
+algolia -q airport -f airport_id -l 50
 
-# Show search results for term "bulgaria" (default limit: 20) 
-algolia -q bulgaria
+# Show search results for term "airport" (default limit: 20) 
+algolia -q airport
 ```
-
-
+## Uninstall
+```bash
+npm uninstall -g algolia-cli
+```
 ## Useful resources
 
 - You could use [the official Algolia JavaScript client](https://github.com/algolia/algoliasearch-client-js) which could run in both Node.js and the browser.
