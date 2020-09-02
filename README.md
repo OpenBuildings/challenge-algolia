@@ -7,17 +7,18 @@ Algolia is a hosted search solution. It allows you send your data in a structure
 
 ## Installation
 
-Execute these commands to install the tool as global CLI application (Mac/Linux):
-- cp .env.dist .env
-- npm install -g .
-
-Fill-in all variables in the .env file.
+Execute these commands to install the tool as global CLI application:
+```bash
+cp .env.dist .env
+npm install -g .
+```
+Set all variables in the .env file.
 
 ## Usage
 The tool is accessible by executing "algolia" in the command line. This action will show all supported parameters.
 
 Examples (assuming you use the sample index GEO):
-```
+```bash
 # Show search results count for term "bulgaria"
 algolia -q bulgaria -c
 
