@@ -1,0 +1,26 @@
+{
+  "name": "challenge-algolia",
+  "version": "1.0.0",
+  "description": "Algolia CLI App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eroteev/challenge-algolia.git"
+  },
+  "keywords": [
+    "algolia",
+    "cli"
+  ],
+  "author": "Stefan Eroteev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eroteev/challenge-algolia/issues"
+  },
+  "homepage": "https://github.com/eroteev/challenge-algolia#readme",
+  "dependencies": {
+    "algoliasearch": "^4.4.0"
+  }
+}
