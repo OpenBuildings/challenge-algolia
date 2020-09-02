@@ -1,30 +1,39 @@
-# [Clippings.com](https://clippings.com) [Algolia](https://www.algolia.com) challenge
-
-Clippings' challenge to developers to create a Node.js CLI search client for Algolia
-
-This is a small task sent to potential hires for evaluation.
+## Node.js CLI search client for [Algolia](https://www.algolia.com)
+This is a simple command line tool for sending search queries to Algolia.
 
 ## What is Algolia?
 
 Algolia is a hosted search solution. It allows you send your data in a structured way to be indexed and then queried with blazing speed. You could read their documentation at https://www.algolia.com/doc.
 
-## The Task
+## Installation
 
-There are a lot of integrations for Algolia, including their awesome dashboard which allows you to search and preview your indices in the browser. However there is no command-line search client which would present the results properly to the user (usually a developer).
+Execute these commands to install the tool as global CLI application (Mac/Linux):
+- cp .env.dist .env
+- npm install -g .
 
-The task is to build a Node.js npm package which could be installed globally as a CLI client.  
-It would be great to have:
+Fill-in all variables in the .env file.
 
-- simple configuration (e.g. environment variables) for API key and application ID;
-- simple help in the CLI describing the possible commands;
-- a CLI interface to perform queries and present them in a readable manner to the user;
-- speed;
-- a cool effect - whether it would be colours, interactive search, piping ability, filtering the results using Algolia facets or anything you can come up with.
+## Usage
+The tool is accessible by executing "algolia" in the command line. This action will show all supported parameters.
 
-## Some pointers
+Examples (assuming you use the sample index GEO):
+```
+# Show search results count for term "bulgaria"
+algolia -q bulgaria -c
 
-- A good design is never easy to achieve, but try to separate the CLI code for input and output from the logic which performs the search and processes the results.
-- A full-blown documentation is unnecessary for this kind of package, but try to have a README stating what the package is for, how to install it, how to use it, license and author information.
+# Limit the results displayed on the terminal. Useful to review the available results.
+algolia -q bulgaria -l 1
+
+# List only field "airport_id" from the resultset (default limit: 20)
+algolia -q bulgaria -f airport_id
+
+# List only field "airport_id" from the resultset for up to 50 results
+algolia -q bulgaria -f airport_id -l 50
+
+# Show search results for term "bulgaria" (default limit: 20) 
+algolia -q bulgaria
+```
+
 
 ## Useful resources
 
@@ -33,12 +42,8 @@ It would be great to have:
 - If you [sign up for Algolia](https://www.algolia.com/users/sign_up) there is a forever-free plan with a tutorial which could fill up your indices with test data. You could use it to test your client without taking the time to import data yourself.
 
 
-## Evaluation
+## License
+MIT
 
-The most important thing is the client to be working and usable. It is optional, but recommended to be tested and linted in an automatic manner.
-
----
-
-The resulting work should have a license compatible with BSD-3-Clause or MIT, and will remain under your own copyright to do as you wish, present elsewere or promote as your own open-source project.
-
-Good luck!
+## Author
+Stefan Eroteev

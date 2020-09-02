@@ -2,7 +2,7 @@
   "name": "challenge-algolia",
   "version": "1.0.0",
   "description": "Algolia CLI App",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,14 @@
   },
   "homepage": "https://github.com/eroteev/challenge-algolia#readme",
   "dependencies": {
-    "algoliasearch": "^4.4.0"
+    "algoliasearch": "^4.4.0",
+    "axios": "^0.19.2",
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.2.0",
+    "yargs": "^13.2.4"
+  },
+  "bin": {
+    "algolia": "./bin/index.js"
   }
 }
